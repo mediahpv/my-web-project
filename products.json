@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "Áo Thun Nam Cổ Tròn",
+      "description": "Áo thun nam cổ tròn, chất liệu cotton thoáng mát, thích hợp mặc hàng ngày.",
+      "price": 250000,
+      "image": "https://example.com/ao-thun-nam.jpg",
+      "category": "Áo thun",
+      "brand": "CoolMate",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Trắng", "Đen", "Xám"]
+    },
+    {
+      "id": 2,
+      "name": "Quần Jeans Nam Ống Đứng",
+      "description": "Quần jeans nam ống đứng, form dáng regular fit, dễ phối đồ.",
+      "price": 500000,
+      "image": "https://example.com/quan-jeans-nam.jpg",
+      "category": "Quần jeans",
+      "brand": "Levi's",
+      "sizes": ["28", "29", "30", "31", "32"],
+      "colors": ["Xanh đậm", "Xanh nhạt"]
+    },
+    {
+      "id": 3,
+      "name": "Giày Sneaker Unisex",
+      "description": "Giày sneaker unisex, kiểu dáng basic, phù hợp cho cả nam và nữ.",
+      "price": 800000,
+      "image": "https://example.com/giay-sneaker.jpg",
+      "category": "Giày dép",
+      "brand": "Adidas",
+      "sizes": ["36", "37", "38", "39", "40", "41", "42"],
+      "colors": ["Trắng", "Đen", "Đỏ"]
+    },
+    {
+      "id": 4,
+      "name": "Váy Liền Thân Họa Tiết Hoa",
+      "description": "Váy liền thân họa tiết hoa nhí, chất liệu voan mềm mại, nữ tính.",
+      "price": 450000,
+      "image": "https://example.com/vay-lien-than.jpg",
+      "category": "Váy",
+      "brand": "Elise",
+      "sizes": ["S", "M", "L"],
+      "colors": ["Hồng", "Xanh", "Vàng"]
+    }
+  ]

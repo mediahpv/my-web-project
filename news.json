@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "title": "Tiêu đề bài viết số 1",
+      "content": "<p>Nội dung chi tiết của bài viết số 1. Bạn có thể sử dụng các thẻ HTML để định dạng nội dung, ví dụ:</p><ul><li>Danh sách 1</li><li>Danh sách 2</li></ul><p>Đoạn văn bản thứ hai.</p>",
+      "image": "https://example.com/image1.jpg",
+      "author": "Tên tác giả",
+      "date": "2023-11-22",
+      "excerpt": "Mô tả ngắn gọn về bài viết số 1, dùng để hiển thị trên trang danh sách tin tức."
+    },
+    {
+      "id": 2,
+      "title": "Tin tức số 2: Một sự kiện quan trọng",
+      "content": "<p>Đây là nội dung của bài viết số 2. Bạn có thể viết bất cứ điều gì ở đây, bao gồm cả các liên kết:</p><a href='https://example.com'>Liên kết đến trang web khác</a>",
+      "image": "https://example.com/image2.jpg",
+      "author": "Nguyễn Văn B",
+      "date": "2023-11-21",
+      "excerpt": "Tóm tắt ngắn gọn về bài viết số 2."
+    },
+    {
+      "id": 3,
+      "title": "Hướng dẫn sử dụng sản phẩm mới",
+      "content": "<p>Bài viết này hướng dẫn cách sử dụng sản phẩm mới của chúng tôi.  Bạn có thể thêm hình ảnh:</p><img src='https://example.com/product-image.jpg' alt='Mô tả ảnh'>",
+      "image": "https://example.com/image3.jpg",
+      "author": "Phòng Marketing",
+      "date": "2023-11-20",
+      "excerpt": "Hướng dẫn chi tiết về sản phẩm mới."
+    }
+  ]
