@@ -1,0 +1,68 @@
+/* src/components/HomePage.css */
+.home-page {
+    /* Style chung cho trang chủ */
+  }
+  
+  .hero {
+    background-image: url('hero-background.jpg'); /* Thay bằng ảnh nền thực tế */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-button {
+    background-color: #007bff; /* Màu nút */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block; /* Để nút có kích thước theo nội dung */
+    margin-top: 20px;
+  }
+  
+  .featured-products {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .product-list {
+    display: flex; /* Để các sản phẩm nằm ngang */
+    justify-content: space-around; /* Căn đều */
+    flex-wrap: wrap; /* Để xuống dòng khi không đủ chỗ */
+  }
+  
+  .product-item {
+    width: 30%; /* Chia cột */
+    margin-bottom: 20px;
+    /* ... thêm style cho từng sản phẩm ... */
+    text-align: center;
+  }
+  
+  .about-us-short {
+    /* ... */
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .cta-section{
+      text-align: center;
+      padding: 50px 20px;
+  }
+  .news-teaser {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .news-list{
+    display: flex;
+    justify-content: center;
+  }
+  .news-item{
+    margin: 1rem;
+  }

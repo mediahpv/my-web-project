@@ -1,0 +1,30 @@
+/* src/components/AboutPage.css */
+.about-page {
+    /* Style chung cho trang About */
+    padding: 20px;
+  }
+  
+  .introduction, .history, .mission-vision, .team {
+    margin-bottom: 30px; /* Khoảng cách giữa các section */
+  }
+  
+  .mission-vision > div{
+      margin-bottom: 20px
+  }
+  
+  .team-members {
+    display: flex; /* Để các thành viên nằm ngang */
+    flex-wrap: wrap; /* Để xuống dòng khi không đủ chỗ */
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    width: 30%; /* Chia cột */
+    text-align: center;
+    margin-bottom: 20px;
+    /* ... thêm style cho từng thành viên ... */
+  }
+  .team-member img{
+      width: 50%;
+      border-radius: 50%; /* bo tròn hình ảnh nếu muốn */
+  }

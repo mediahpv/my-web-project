@@ -1,0 +1,29 @@
+/* src/components/ProductDetail.css */
+.product-detail {
+    /* Bố cục, style chung cho trang chi tiết sản phẩm */
+    display: flex;
+    /* ... */
+}
+
+.product-image{
+  width: 100%;
+}
+
+.product-info {
+    /* Style cho phần thông tin sản phẩm */
+}
+
+.product-title {
+    /* ... */
+}
+
+.product-price {
+    /* ... */
+}
+
+.product-description {
+    /* ... */
+}
+.loading, .error,.not-found{
+    text-align: center;
+}
