@@ -1,0 +1,45 @@
+/* admin/components/Dashboard.css */
+
+.dashboard {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.overview {
+    margin-bottom: 30px;
+}
+
+.overview h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.overview-card {
+    width: 23%; /* Chia thành 4 cột */
+    min-width: 150px; /* Chiều rộng tối thiểu */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border-radius: 4px;
+}
+
+.overview-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.overview-card p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Màu xanh (ví dụ) */
+}

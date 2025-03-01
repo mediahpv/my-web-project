@@ -1,4 +1,4 @@
-// src/components/ContactPage.js
+// src/pages/ContactPage/ContactPage.js
 import React, { useState } from 'react';
 import './ContactPage.css';
 
@@ -21,11 +21,11 @@ function ContactPage() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setError(null);
+    e.preventDefault(); // Ngăn chặn submit form mặc định
+    setSubmitting(true); // Đặt trạng thái đang gửi
+    setError(null); // Xóa lỗi cũ (nếu có)
 
-    // Gọi API để gửi dữ liệu
+    // Gọi API để gửi dữ liệu form
     fetch('http://localhost:3001/api/contact', {
       method: 'POST',
       headers: {
@@ -35,13 +35,15 @@ function ContactPage() {
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          // Nếu server trả về lỗi (status code 4xx hoặc 5xx)
+          throw new Error('Gửi yêu cầu liên hệ không thành công.');
         }
-        return response.json();
+        return response.json(); // Chuyển response sang JSON
       })
       .then((data) => {
-        setSubmitted(true); // Đặt trạng thái đã gửi thành công
-        setSubmitting(false);
+        // Xử lý khi gửi thành công
+        setSubmitted(true); // Đặt trạng thái đã gửi
+        setSubmitting(false); // Đặt trạng thái không còn gửi nữa
         // Reset form (tùy chọn)
         setFormData({
           name: '',
@@ -51,34 +53,42 @@ function ContactPage() {
         });
       })
       .catch((error) => {
-        setError(error.message);
-        setSubmitting(false);
+        // Xử lý lỗi
+        setError(error.message); // Lưu thông báo lỗi
+        setSubmitting(false); // Đặt trạng thái không còn gửi nữa
       });
   };
 
   return (
     <div className="contact-page">
-      <h1>Liên hệ</h1>
+      <h1>Liên Hệ</h1>
 
       <div className="contact-info">
-        <h2>Thông tin liên hệ</h2>
+        <h2>Thông Tin Liên Hệ</h2>
         <p>
-          <strong>Địa chỉ:</strong> 123 Đường ABC, Thành phố XYZ<br />
-          <strong>Điện thoại:</strong> (0123) 456-7890<br />
+          <strong>Địa chỉ:</strong> 123 Đường ABC, Thành phố XYZ
+        </p>
+        <p>
+          <strong>Điện thoại:</strong> (0123) 456-7890
+        </p>
+        <p>
           <strong>Email:</strong> contact@example.com
         </p>
+        {/* Thêm liên kết mạng xã hội (nếu có) */}
       </div>
 
-      <h2>Gửi tin nhắn cho chúng tôi</h2>
-      {submitted ? ( // Hiển thị thông báo khi đã gửi thành công
+      <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+
+      {submitted ? (
         <div className="success-message">
-          Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.
+          <p>Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="contact-form">
           {error && <div className="error-message">{error}</div>}
-          <div>
-            <label htmlFor="name">Họ và tên:</label>
+
+          <div className="form-group">
+            <label htmlFor="name">Họ và Tên:</label>
             <input
               type="text"
               id="name"
@@ -88,7 +98,8 @@ function ContactPage() {
               required
             />
           </div>
-          <div>
+
+          <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -99,7 +110,8 @@ function ContactPage() {
               required
             />
           </div>
-          <div>
+
+          <div className="form-group">
             <label htmlFor="subject">Tiêu đề:</label>
             <input
               type="text"
@@ -110,7 +122,8 @@ function ContactPage() {
               required
             />
           </div>
-          <div>
+
+          <div className="form-group">
             <label htmlFor="message">Nội dung:</label>
             <textarea
               id="message"
@@ -118,13 +131,17 @@ function ContactPage() {
               value={formData.message}
               onChange={handleChange}
               required
+              rows="5" // Thêm thuộc tính rows
             ></textarea>
           </div>
+
           <button type="submit" disabled={submitting}>
             {submitting ? 'Đang gửi...' : 'Gửi'}
           </button>
         </form>
       )}
+
+      {/* (Tùy chọn) Thêm bản đồ */}
     </div>
   );
 }

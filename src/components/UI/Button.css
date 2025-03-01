@@ -1,0 +1,32 @@
+/* frontend/src/components/UI/Button.css */
+
+.button {
+    background-color: #007bff; /* Màu nền mặc định */
+    color: white; /* Màu chữ */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Con trỏ chuột hình bàn tay */
+    font-size: 16px;
+    transition: background-color 0.2s; /* Hiệu ứng chuyển màu */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+  }
+  
+  .button:disabled {
+    background-color: #cccccc; /* Màu nền khi disabled */
+    color: #666666;
+    cursor: not-allowed; /* Con trỏ chuột hình cấm */
+  }
+  
+  /* (Tùy chọn) Thêm các style khác (ví dụ: các biến thể của button) */
+  .button-primary {
+    /* ... */
+  }
+  
+  .button-secondary {
+    /* ... */
+  }
+  

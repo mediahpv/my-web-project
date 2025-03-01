@@ -1,0 +1,64 @@
+/* src/pages/AboutPage/AboutPage.css */
+
+.about-page {
+  padding: 20px;
+  max-width: 800px; /* Giới hạn độ rộng tối đa */
+  margin: 0 auto;     /* Căn giữa trang */
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.introduction,
+.history,
+.mission-vision,
+.team {
+  margin-bottom: 40px; /* Khoảng cách giữa các section */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ddd; /* Đường kẻ dưới tiêu đề */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style: disc; /* Dấu chấm đầu dòng */
+  margin-left: 20px; /* Thụt lề */
+}
+.mission div, .vision div{
+margin-bottom: 15px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member {
+  width: 45%; /* Hoặc kích thước bạn muốn */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-member-image {
+  width: 150px; /* Ví dụ */
+  height: 150px; /* Ví dụ */
+  border-radius: 50%; /* Bo tròn ảnh */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  margin-bottom: 10px;
+}
+.team-member-title{
+font-style: italic;
+}

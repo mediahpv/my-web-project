@@ -1,0 +1,17 @@
+/* frontend/src/components/Layout/Layout.css */
+
+.layout-container {
+    min-height: 100vh; /* Chiếm toàn bộ chiều cao viewport (trình duyệt) */
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử (header, main, footer) theo chiều dọc */
+  }
+  
+  .main-content {
+    flex: 1; /* Phần nội dung chính (main) sẽ "nở" ra để chiếm phần lớn diện tích còn lại */
+    padding: 20px; /* Khoảng cách lề xung quanh nội dung (tùy chỉnh) */
+    max-width: 1200px; /* Giới hạn độ rộng tối đa của nội dung (tùy chọn) */
+    margin: 0 auto; /* Căn giữa nội dung (khi có max-width) */
+    /* Thêm các style khác cho phần nội dung chính (nếu cần) */
+  }
+  
+  /* (Tùy chọn) Thêm style cho các phần tử khác trong layout (nếu có) */

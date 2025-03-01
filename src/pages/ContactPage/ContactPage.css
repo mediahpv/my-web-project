@@ -1,0 +1,82 @@
+/* src/pages/ContactPage/ContactPage.css */
+
+.contact-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .contact-form label {
+    display: block; /* Đặt label trên một dòng riêng */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Quan trọng: để padding không làm tăng kích thước */
+  }
+  
+  .contact-form textarea {
+    resize: vertical; /* Cho phép người dùng kéo dãn theo chiều dọc */
+  }
+  
+  .contact-form button {
+    background-color: #007bff; /* Màu xanh (ví dụ) */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  .contact-form button:disabled {
+      background-color: #cccccc; /* Màu xám khi disabled */
+      color: #666666;       /* Màu chữ xám khi disabled */
+      cursor: not-allowed;     /* Con trỏ chuột thay đổi */
+  }
+  
+  .success-message {
+    background-color: #d4edda; /* Màu nền xanh lá nhạt (ví dụ) */
+    border: 1px solid #c3e6cb; /* Viền xanh lá */
+    color: #155724; /* Màu chữ xanh lá đậm */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    background-color: #f8d7da; /* Màu nền đỏ nhạt (ví dụ) */
+    border: 1px solid #f5c6cb; /* Viền đỏ */
+    color: #721c24; /* Màu chữ đỏ đậm */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  .form-group{
+      margin-bottom: 15px;
+  }
+  

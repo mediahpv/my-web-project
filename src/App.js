@@ -1,28 +1,19 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import ProductPage from './components/ProductPage';
-import ProductDetail from './components/ProductDetail';
-import AboutPage from './components/AboutPage';
-import ContactPage from './components/ContactPage';
-import NotFoundPage from './components/NotFoundPage';
-import Layout from './components/Layout';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext'; // Import AuthProvider
+import AppRoutes from './routes'; // Import AppRoutes
+import Layout from './components/Layout/Layout'; // Import Layout
+import './App.css'; // Import CSS (nếu bạn có file App.css riêng)
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/products" element={<ProductPage />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="/news/:id" element={<NewsDetail />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Layout>
+      <AuthProvider>
+        <Layout>
+          <AppRoutes />
+        </Layout>
+      </AuthProvider>
     </Router>
   );
 }

@@ -1,0 +1,82 @@
+/* frontend/src/components/Footer/Footer.css */
+
+.footer {
+  background-color: #333; /* Màu nền (thay đổi) */
+  color: #fff; /* Màu chữ */
+  padding: 2rem 0; /* Khoảng cách trên dưới */
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px; /* Giới hạn độ rộng tối đa */
+  margin: 0 auto; /* Căn giữa */
+  padding: 0 20px; /* Khoảng cách lề trái phải */
+  display: flex; /* Chia thành các cột */
+  flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+  justify-content: space-between; /* Căn đều các cột */
+}
+
+.footer-section {
+  width: 30%; /* Chiều rộng mỗi cột (thay đổi) */
+  margin-bottom: 1.5rem; /* Khoảng cách dưới mỗi cột */
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p i {
+  margin-right: 0.5rem; /* Khoảng cách giữa icon và chữ */
+  color: #007bff; /* Màu icon */
+}
+.footer-section p a{
+   color: #fff;
+   text-decoration: none;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block; /* Để các icon nằm ngang */
+  margin-right: 1rem; /* Khoảng cách giữa các icon */
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Kích thước icon */
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-copyright {
+  text-align: center; /* Căn giữa */
+  margin-top: 2rem; /* Khoảng cách trên */
+  padding-top: 1rem; /* Khoảng cách trên */
+  border-top: 1px solid #555; /* Đường kẻ trên (tùy chọn) */
+}
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-section{
+        width: 100%;
+        text-align: center;
+    }
+}

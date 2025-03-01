@@ -1,0 +1,144 @@
+/* src/pages/HomePage/HomePage.css */
+
+.home-page {
+  /* Style chung cho toàn bộ trang chủ */
+  font-family: sans-serif; /* Ví dụ: Đặt font chữ mặc định */
+  line-height: 1.6;       /* Ví dụ: Đặt độ cao dòng */
+  color: #333;          /* Ví dụ: Màu chữ mặc định */
+  /* Thêm các style khác nếu cần */
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('/images/hero-background.jpg'); /* Đặt ảnh nền */
+  /* Chú ý:
+     - Đường dẫn này là tương đối so với thư mục `public`.
+     - Nếu bạn import ảnh trực tiếp trong HomePage.js, bạn không cần thuộc tính này ở đây.
+  */
+  background-size: cover;        /* Ảnh nền phủ kín toàn bộ phần tử */
+  background-position: center;   /* Căn giữa ảnh nền */
+  background-repeat: no-repeat;  /* Không lặp lại ảnh nền */
+  color: white;              /* Màu chữ (nên chọn màu tương phản với ảnh nền) */
+  text-align: center;        /* Căn giữa nội dung */
+  padding: 150px 20px;     /* Khoảng cách trên dưới và trái phải */
+  /* Thêm các style khác nếu cần (ví dụ: đổ bóng, làm mờ ảnh, ...) */
+}
+
+.hero-content {
+  max-width: 800px; /* Giới hạn độ rộng tối đa của nội dung */
+  margin: 0 auto;    /* Căn giữa nội dung */
+}
+
+.hero h1 {
+  font-size: 3em;      /* Cỡ chữ tiêu đề */
+  margin-bottom: 0.5em; /* Khoảng cách dưới */
+  /* Thêm các style khác nếu cần (ví dụ: font-weight, text-transform, ...) */
+}
+
+.hero p {
+  font-size: 1.2em;    /* Cỡ chữ mô tả */
+  margin-bottom: 1.5em; /* Khoảng cách dưới */
+  /* Thêm các style khác nếu cần */
+}
+
+.cta-button {
+  /* Nút kêu gọi hành động */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Màu nền (ví dụ) */
+  color: white;              /* Màu chữ */
+  text-decoration: none;    /* Bỏ gạch chân */
+  border-radius: 5px;      /* Bo tròn góc */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+  /* Thêm các style khác nếu cần */
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Màu nền khi hover (ví dụ) */
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 50px 20px;      /* Khoảng cách trên dưới và trái phải */
+  text-align: center;      /* Căn giữa nội dung */
+}
+
+.featured-products h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.product-list {
+  display: flex;           /* Để các sản phẩm nằm ngang */
+  flex-wrap: wrap;          /* Cho phép xuống dòng khi không đủ chỗ */
+  justify-content: space-around; /* Căn đều các sản phẩm */
+  /* Thêm các style khác nếu cần */
+}
+
+.product-item {
+  width: 30%;              /* Chiều rộng mỗi sản phẩm (ví dụ) */
+  margin-bottom: 20px;     /* Khoảng cách dưới */
+  /* Thêm các style khác (ví dụ: border, box-shadow, ...) */
+}
+.product-item img {
+    width: 100%; /* Chiều rộng hình ảnh bằng với phần tử cha */
+    height: auto;   /* Chiều cao tự động điều chỉnh theo tỉ lệ */
+}
+
+/* About Us Section */
+.about-us-short {
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Màu nền (ví dụ) */
+  /* Thêm các style khác nếu cần */
+}
+.about-us-short h2{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.about-us-short p{
+  text-align: justify;
+}
+/* CTA Section */
+.cta-section {
+  background-color: #e9ecef; /* Màu nền (ví dụ) */
+  padding: 50px 20px;
+  text-align: center;
+  /* Thêm các style khác nếu cần */
+}
+
+/* News Teaser Section */
+.news-teaser {
+  padding: 50px 20px;
+  /* Thêm các style khác nếu cần */
+}
+
+.news-teaser h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Điều này sẽ phân phối các phần tử đồng đều */
+}
+
+.news-item {
+    width: 45%; /* Đặt chiều rộng mong muốn, ví dụ 45% để có 2 cột */
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Tùy chọn: thêm border để dễ nhìn */
+    padding: 10px;
+     text-align: center;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước phần tử */
+}
+.news-item a {
+  text-decoration: none;
+}
+.news-item img{
+  width: 100%;
+  height: auto;
+}
+.loading, .error{
+    text-align: center;
+}

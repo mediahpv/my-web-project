@@ -1,0 +1,36 @@
+/* frontend/src/components/UI/Input.css */
+
+.input-group {
+    margin-bottom: 1rem; /* Khoảng cách giữa các input group */
+  }
+  
+  .input-group label {
+    display: block; /* Để label nằm trên input */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%; /* Chiều rộng tối đa */
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 4px; /* Bo tròn góc */
+    font-size: 1rem;
+  }
+  
+  .input:focus {
+    border-color: #007bff; /* Màu viền khi focus */
+    outline: none; /* Bỏ outline mặc định của trình duyệt */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Hiệu ứng đổ bóng (tùy chọn) */
+  }
+  
+  .input.error {
+    border-color: #dc3545; /* Màu viền đỏ khi có lỗi */
+  }
+  
+  .error-message {
+    color: #dc3545; /* Màu chữ đỏ */
+    font-size: 0.8rem; /* Chữ nhỏ hơn */
+    margin-top: 0.25rem; /* Khoảng cách trên */
+  }
+  

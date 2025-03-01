@@ -1,0 +1,49 @@
+/* src/pages/NewsPage/NewsPage.css */
+
+.news-page {
+    padding: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Hoặc space-around */
+}
+
+.news-item {
+    width: 48%; /* Ví dụ: 2 cột */
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Đường viền (tùy chọn) */
+    padding: 10px;
+    /* Thêm các style khác nếu cần */
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.news-item a{
+   text-decoration: none;
+}
+.news-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.news-excerpt {
+    /* Thêm style cho phần mô tả ngắn */
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.error {
+    color: red;
+}

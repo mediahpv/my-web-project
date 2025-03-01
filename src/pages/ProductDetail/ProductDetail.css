@@ -1,0 +1,54 @@
+/* src/pages/ProductDetail/ProductDetail.css */
+
+.product-detail {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px; /* Giới hạn độ rộng tối đa */
+    margin: 0 auto;     /* Căn giữa */
+}
+
+.product-image-container {
+    width: 50%;
+    padding-right: 40px;
+    text-align: center; /* Căn giữa ảnh (nếu cần) */
+}
+
+.product-image {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá khung chứa */
+    height: auto;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+    margin: 0 auto;  /* Căn giữa ảnh (nếu cần) */
+
+}
+
+.product-info {
+    width: 50%;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e44d26; /* Màu cam (ví dụ) */
+    margin-bottom: 10px;
+}
+
+.product-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.loading,
+.error,
+.not-found {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.error {
+    color: red;
+}
+
+.not-found {
+    color: gray;
+}

@@ -1,0 +1,68 @@
+/* src/pages/NewsDetail/NewsDetail.css */
+
+.news-detail {
+    padding: 20px;
+    max-width: 800px; /* Giới hạn độ rộng tối đa */
+    margin: 0 auto;     /* Căn giữa trang */
+    font-family: sans-serif; /* Font chữ */
+    line-height: 1.6;       /* Độ cao dòng */
+}
+
+/* Tiêu đề bài viết */
+.article-title {
+    font-size: 2.5em;       /* Cỡ chữ lớn */
+    margin-bottom: 0.5em;   /* Khoảng cách dưới */
+    color: #333;          /* Màu chữ */
+}
+
+/* Thông tin phụ (tác giả, ngày đăng) */
+.article-meta {
+    font-style: italic;     /* Chữ nghiêng */
+    color: #666;          /* Màu xám */
+    margin-bottom: 1em;    /* Khoảng cách dưới */
+}
+
+.article-author {
+    font-weight: bold;    /* In đậm tên tác giả */
+}
+
+.article-date {
+    /* Bạn có thể thêm style cho ngày tháng nếu muốn */
+}
+
+/* Ảnh bài viết */
+.article-image {
+    max-width: 100%;      /* Ảnh không vượt quá chiều rộng của khung chứa */
+    height: auto;         /* Chiều cao tự động điều chỉnh theo tỷ lệ */
+    display: block;       /* Loại bỏ khoảng trắng thừa dưới ảnh */
+    margin-bottom: 20px;   /* Khoảng cách dưới ảnh */
+}
+
+/* Nội dung bài viết */
+.article-content {
+    /* Thêm style cho nội dung bài viết */
+    /* Ví dụ: */
+    line-height: 1.8;
+    text-align: justify; /* Căn đều hai bên */
+}
+
+.article-content p {
+    margin-bottom: 1em; /* Khoảng cách giữa các đoạn văn */
+}
+
+/* Các class cho loading, error, not-found (nếu bạn muốn style riêng) */
+.loading,
+.error,
+.not-found {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.error {
+    color: red;
+}
+
+.not-found {
+    color: gray;
+}
