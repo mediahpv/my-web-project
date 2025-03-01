@@ -1,29 +1,29 @@
 [
-    {
-      "id": 1,
-      "title": "Tiêu đề bài viết số 1",
-      "content": "<p>Nội dung chi tiết của bài viết số 1. Bạn có thể sử dụng các thẻ HTML để định dạng nội dung, ví dụ:</p><ul><li>Danh sách 1</li><li>Danh sách 2</li></ul><p>Đoạn văn bản thứ hai.</p>",
-      "image": "https://example.com/image1.jpg",
-      "author": "Tên tác giả",
-      "date": "2023-11-22",
-      "excerpt": "Mô tả ngắn gọn về bài viết số 1, dùng để hiển thị trên trang danh sách tin tức."
-    },
-    {
-      "id": 2,
-      "title": "Tin tức số 2: Một sự kiện quan trọng",
-      "content": "<p>Đây là nội dung của bài viết số 2. Bạn có thể viết bất cứ điều gì ở đây, bao gồm cả các liên kết:</p><a href='https://example.com'>Liên kết đến trang web khác</a>",
-      "image": "https://example.com/image2.jpg",
-      "author": "Nguyễn Văn B",
-      "date": "2023-11-21",
-      "excerpt": "Tóm tắt ngắn gọn về bài viết số 2."
-    },
-    {
-      "id": 3,
-      "title": "Hướng dẫn sử dụng sản phẩm mới",
-      "content": "<p>Bài viết này hướng dẫn cách sử dụng sản phẩm mới của chúng tôi.  Bạn có thể thêm hình ảnh:</p><img src='https://example.com/product-image.jpg' alt='Mô tả ảnh'>",
-      "image": "https://example.com/image3.jpg",
-      "author": "Phòng Marketing",
-      "date": "2023-11-20",
-      "excerpt": "Hướng dẫn chi tiết về sản phẩm mới."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Xu hướng Digital Marketing nổi bật năm 2024",
+    "content": "<p>Năm 2024 hứa hẹn sẽ mang đến nhiều thay đổi và cơ hội mới trong lĩnh vực Digital Marketing. Dưới đây là một số xu hướng đáng chú ý:</p><ul><li><strong>AI và Machine Learning:</strong> Ứng dụng AI để cá nhân hóa trải nghiệm khách hàng, tối ưu hóa chiến dịch quảng cáo, và phân tích dữ liệu.</li><li><strong>Video Marketing:</strong> Tiếp tục thống trị, đặc biệt là các định dạng video ngắn (Short-form video) trên TikTok, Reels, YouTube Shorts.</li><li><strong>Marketing trên nền tảng Metaverse:</strong> Khám phá tiềm năng của Metaverse trong việc tạo ra các trải nghiệm tương tác mới cho khách hàng.</li><li><strong>Tìm kiếm bằng giọng nói (Voice Search):</strong> Tối ưu hóa nội dung cho tìm kiếm bằng giọng nói.</li><li><strong>Bảo mật dữ liệu và quyền riêng tư:</strong>  Các quy định về bảo mật dữ liệu ngày càng chặt chẽ hơn, đòi hỏi các nhà tiếp thị phải tuân thủ và tìm kiếm các giải pháp thay thế cookie.</li></ul><p>Hãy đón đầu xu hướng để xây dựng chiến lược Digital Marketing hiệu quả cho doanh nghiệp của bạn!</p>",
+    "image": "https://example.com/digital-marketing-trends-2024.jpg",
+    "author": "Nguyễn Văn A",
+    "date": "2023-11-24",
+    "excerpt": "Khám phá những xu hướng Digital Marketing quan trọng nhất năm 2024 để xây dựng chiến lược thành công."
+  },
+  {
+    "id": 2,
+    "title": "Hướng dẫn tối ưu hóa SEO cho website của bạn",
+    "content": "<p>SEO (Search Engine Optimization) là một phần không thể thiếu trong chiến lược Digital Marketing. Dưới đây là một số bước cơ bản để tối ưu hóa SEO cho website của bạn:</p><ol><li><strong>Nghiên cứu từ khóa (Keyword Research):</strong> Xác định các từ khóa mà khách hàng tiềm năng của bạn sử dụng để tìm kiếm sản phẩm/dịch vụ của bạn.</li><li><strong>Tối ưu hóa On-Page:</strong> Tối ưu hóa tiêu đề trang, mô tả meta, URL, nội dung, hình ảnh, ...</li><li><strong>Tối ưu hóa Off-Page:</strong> Xây dựng liên kết (backlinks) từ các trang web uy tín khác.</li><li><strong>Cải thiện tốc độ tải trang:</strong> Tốc độ tải trang là một yếu tố quan trọng trong SEO.</li><li><strong>Tối ưu hóa cho thiết bị di động:</strong> Đảm bảo website của bạn hiển thị tốt trên các thiết bị di động.</li></ol><p>Hãy bắt đầu tối ưu hóa SEO ngay hôm nay để website của bạn xuất hiện ở vị trí cao trên các công cụ tìm kiếm!</p>",
+    "image": "https://example.com/seo-optimization.jpg",
+    "author": "Trần Thị B",
+    "date": "2023-11-23",
+    "excerpt": "Các bước cơ bản để tối ưu hóa SEO cho website, giúp tăng thứ hạng trên các công cụ tìm kiếm."
+  },
+  {
+    "id": 3,
+    "title": "Cách sử dụng quảng cáo Facebook Ads hiệu quả",
+    "content": "<p>Facebook Ads là một công cụ quảng cáo mạnh mẽ, giúp bạn tiếp cận hàng triệu khách hàng tiềm năng. Tuy nhiên, để chạy quảng cáo Facebook Ads hiệu quả, bạn cần:</p><ul><li><strong>Xác định mục tiêu quảng cáo rõ ràng.</strong></li><li><strong>Nghiên cứu đối tượng mục tiêu (Target Audience).</strong></li><li><strong>Tạo nội dung quảng cáo hấp dẫn.</strong></li><li><strong>Chọn định dạng quảng cáo phù hợp.</strong></li><li><strong>Theo dõi và tối ưu hóa chiến dịch quảng cáo.</strong></li></ul><p>Bài viết này sẽ hướng dẫn bạn chi tiết cách sử dụng Facebook Ads để đạt được kết quả tốt nhất.</p>",
+    "image": "https://example.com/facebook-ads.jpg",
+    "author": "Lê Văn C",
+    "date": "2023-11-22",
+    "excerpt": "Hướng dẫn từng bước cách sử dụng Facebook Ads để quảng bá sản phẩm/dịch vụ của bạn."
+  }
+]

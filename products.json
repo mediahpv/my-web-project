@@ -1,46 +1,52 @@
 [
-    {
-      "id": 1,
-      "name": "Áo Thun Nam Cổ Tròn",
-      "description": "Áo thun nam cổ tròn, chất liệu cotton thoáng mát, thích hợp mặc hàng ngày.",
-      "price": 250000,
-      "image": "https://example.com/ao-thun-nam.jpg",
-      "category": "Áo thun",
-      "brand": "CoolMate",
-      "sizes": ["S", "M", "L", "XL"],
-      "colors": ["Trắng", "Đen", "Xám"]
-    },
-    {
-      "id": 2,
-      "name": "Quần Jeans Nam Ống Đứng",
-      "description": "Quần jeans nam ống đứng, form dáng regular fit, dễ phối đồ.",
-      "price": 500000,
-      "image": "https://example.com/quan-jeans-nam.jpg",
-      "category": "Quần jeans",
-      "brand": "Levi's",
-      "sizes": ["28", "29", "30", "31", "32"],
-      "colors": ["Xanh đậm", "Xanh nhạt"]
-    },
-    {
-      "id": 3,
-      "name": "Giày Sneaker Unisex",
-      "description": "Giày sneaker unisex, kiểu dáng basic, phù hợp cho cả nam và nữ.",
-      "price": 800000,
-      "image": "https://example.com/giay-sneaker.jpg",
-      "category": "Giày dép",
-      "brand": "Adidas",
-      "sizes": ["36", "37", "38", "39", "40", "41", "42"],
-      "colors": ["Trắng", "Đen", "Đỏ"]
-    },
-    {
-      "id": 4,
-      "name": "Váy Liền Thân Họa Tiết Hoa",
-      "description": "Váy liền thân họa tiết hoa nhí, chất liệu voan mềm mại, nữ tính.",
-      "price": 450000,
-      "image": "https://example.com/vay-lien-than.jpg",
-      "category": "Váy",
-      "brand": "Elise",
-      "sizes": ["S", "M", "L"],
-      "colors": ["Hồng", "Xanh", "Vàng"]
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Thiết kế logo chuyên nghiệp",
+    "description": "Tạo dựng logo độc đáo, ấn tượng, phản ánh đúng giá trị và tầm nhìn của doanh nghiệp bạn.",
+    "price": 5000000,
+    "image": "https://example.com/logo-design.jpg",
+    "category": "Thiết kế",
+    "brand": "YourBrand",
+    "options": ["Cơ bản", "Tiêu chuẩn", "Cao cấp"]
+  },
+  {
+    "id": 2,
+    "name": "Xây dựng bộ nhận diện thương hiệu",
+    "description": "Bao gồm logo, bảng màu, font chữ, hướng dẫn sử dụng, và các ấn phẩm truyền thông khác.",
+    "price": 15000000,
+    "image": "https://example.com/brand-identity.jpg",
+    "category": "Thiết kế",
+    "brand": "YourBrand",
+     "options": ["Cơ bản", "Tiêu chuẩn", "Cao cấp"]
+  },
+  {
+    "id": 3,
+    "name": "Tư vấn chiến lược thương hiệu",
+    "description": "Giúp bạn xác định mục tiêu, giá trị cốt lõi, định vị thương hiệu, và xây dựng kế hoạch phát triển.",
+    "price": 10000000,
+    "image": "https://example.com/brand-strategy.jpg",
+    "category": "Tư vấn",
+    "brand": "YourBrand",
+     "options": ["Cá nhân", "Doanh nghiệp nhỏ", "Doanh nghiệp lớn"]
+  },
+  {
+    "id": 4,
+    "name": "Quản lý mạng xã hội",
+    "description": "Xây dựng và quản lý nội dung trên các kênh mạng xã hội, tăng tương tác và nhận diện thương hiệu.",
+    "price": 7000000,
+    "image": "https://example.com/social-media.jpg",
+    "category": "Marketing",
+    "brand": "YourBrand",
+    "platforms": ["Facebook", "Instagram", "TikTok", "LinkedIn"]
+  },
+  {
+    "id": 5,
+    "name": "Viết nội dung website/blog",
+    "description": "Cung cấp nội dung chất lượng cao, chuẩn SEO, thu hút khách hàng tiềm năng.",
+    "price": 1000000,
+    "image": "https://example.com/content-writing.jpg",
+    "category": "Content",
+    "brand": "YourBrand",
+    "wordCounts": ["500 từ", "1000 từ", "2000 từ"]
+  }
+]

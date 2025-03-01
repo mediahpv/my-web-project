@@ -1,79 +1,62 @@
 // backend/server.js
+
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser'); // Thêm body-parser
-const newsData = require('./news.json');
-const productsData = require('./products.json');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const path = require('path'); // Import thư viện path
+
+// Load environment variables (từ file .env ở thư mục gốc)
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
-// Sử dụng middleware cors
+// Middleware
 app.use(cors());
-// Sử dụng body-parser để xử lý dữ liệu gửi lên từ form
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// API cho tin tức
-app.get('/api/news', (req, res) => {
-    // Lấy danh sách tin tức
-  res.json(newsData);
-});
+// Kết nối MongoDB (sử dụng Mongoose)
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+    .then(() => {
+        console.log('Connected to MongoDB');
 
-app.get('/api/news/:id', (req, res) => {
-     // Lấy chi tiết tin tức theo ID
-  const articleId = parseInt(req.params.id);
-  const article = newsData.find(item => item.id === articleId);
+        // Import routes
+        const authRoutes = require('./routes/authRoutes');
+        const userRoutes = require('./routes/userRoutes');
+        const productRoutes = require('./routes/productRoutes');
+        const orderRoutes = require('./routes/orderRoutes');
+        const newsRoutes = require('./routes/newsRoutes');
 
-  if (!article) {
-    return res.status(404).json({ message: 'Không tìm thấy tin tức' });
-  }
-  res.json(article);
-});
+        // Sử dụng routes
+        app.use('/api/auth', authRoutes);
+        app.use('/api/users', userRoutes);
+        app.use('/api/products', productRoutes);
+        app.use('/api/orders', orderRoutes);
+        app.use('/api/news', newsRoutes);
 
-// API cho sản phẩm
-app.get('/api/products', (req, res) => {
-    // Lấy danh sách sản phẩm
-  res.json(productsData);
-});
+        // Xử lý lỗi 404 (Not Found)
+        app.use((req, res, next) => {
+            res.status(404).json({ message: 'Not Found' });
+        });
 
-app.get('/api/products/:id', (req, res) => {
-    // Lấy chi tiết sản phẩm theo ID
-  const productId = parseInt(req.params.id);
-  const product = productsData.find(item => item.id === productId);
+        // Middleware xử lý lỗi chung (error handler)
+        app.use((err, req, res, next) => {
+            console.error(err.stack);
+            res.status(500).json({ message: err.message || 'Internal Server Error' });
+        });
 
-  if (!product) {
-    return res.status(404).json({ message: 'Không tìm thấy sản phẩm' });
-  }
-  res.json(product);
-});
-
-// API cho form liên hệ (ContactPage)
-app.post('/api/contact', (req, res) => {
-    // Xử lý dữ liệu từ form liên hệ
-  const { name, email, message } = req.body;
-
-  // TODO: Xử lý dữ liệu (ví dụ: gửi email, lưu vào database, ...)
-  // Ở đây, tôi chỉ log ra console để ví dụ
-  console.log('Dữ liệu từ form liên hệ:', { name, email, message });
-
-  // Trả về phản hồi cho client
-  res.json({ message: 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.' });
-});
-
-// Middleware xử lý lỗi chung (chi tiết hơn)
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-
-  // Trả về mã lỗi và thông báo cụ thể hơn
-  if (err.name === 'ValidationError') {
-    return res.status(400).json({ message: err.message }); // Lỗi validation
-  }
-
-  res.status(500).json({ message: 'Đã có lỗi xảy ra ở phía server!' }); // Lỗi server chung
-});
-
-// Khởi động server
-app.listen(port, () => {
-  console.log(`Server đang chạy trên cổng ${port}`);
-});
+        // Khởi động server
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    })
+    .catch((err) => {
+        console.error('MongoDB connection error:', err);
+        process.exit(1); // Thoát ứng dụng nếu không kết nối được database
+    });
