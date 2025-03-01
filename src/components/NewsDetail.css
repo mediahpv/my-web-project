@@ -1,0 +1,18 @@
+/* src/components/NewsDetail.css */
+.news-detail {
+    /* Style cho trang chi tiết tin tức */
+    /* ... */
+}
+
+.loading, .error, .not-found {
+    text-align: center;
+}
+.article-title{
+ /* ... */
+}
+.article-content{
+ /* ... */
+}
+.article-author{
+ /* ... */
+}

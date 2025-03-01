@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #333; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 20px 0; /* Khoảng cách trên dưới */
+  }
+  
+  .footer-container {
+    display: flex; /* Chia thành các cột */
+    justify-content: space-around; /* Căn đều các cột */
+    max-width: 1200px; /* Giới hạn độ rộng */
+    margin: 0 auto; /* Căn giữa */
+    padding: 0 20px; /* Khoảng cách lề trái phải */
+  }
+  
+  .footer-section {
+    width: 30%; /* Chia cột */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline-block; /* Để các icon nằm ngang */
+    margin-right: 10px;
+  }
+  
+  .footer-copyright {
+    text-align: center; /* Căn giữa */
+    margin-top: 20px; /* Khoảng cách trên */
+    border-top: 1px solid #555; /* Đường kẻ trên */
+    padding-top: 10px; /* Khoảng cách trên */
+  }

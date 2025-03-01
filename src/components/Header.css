@@ -1,0 +1,38 @@
+/* src/components/Header.css */
+.header {
+    background-color: #f0f0f0; /* Ví dụ: màu nền */
+    padding: 10px 20px;
+    display: flex; /* Để logo và nav nằm cùng hàng */
+    justify-content: space-between; /* Căn giữa logo và nav */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  
+  .header-logo {
+    height: 50px; /* Ví dụ: chiều cao logo */
+  }
+  
+  .header-nav ul {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Để các item nằm ngang */
+  }
+  
+  .header-nav li {
+    margin-right: 20px; /* Khoảng cách giữa các item */
+  }
+  
+  .header-nav a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    padding: 5px 10px;
+    border-radius: 5px; /* Bo tròn góc */
+  }
+  
+  .header-nav a.active {
+    background-color: #007bff; /* Màu nền khi active */
+    color: white;
+  }
+  .logo-wraper{
+      width: 50%;
+  }
